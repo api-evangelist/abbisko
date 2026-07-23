@@ -1,7 +1,23 @@
 aid: abbisko
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/abbisko.png
 name: abbisko
-description: abbisko is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Abbisko Therapeutics (上海和誉生物医药科技有限公司) is a Shanghai-based clinical-stage
+  biopharmaceutical company focused on the discovery and development of innovative small-molecule
+  therapeutics, primarily in oncology. It was surfaced as a portfolio company of Qiming Venture
+  Partners and added to the API Evangelist network as a stub. Enrichment found no public developer
+  API, SDK, documentation, or agent surface — this is a biopharmaceutical R&D company, not an API
+  provider — so no API artifacts apply; only a live domain-security probe was captured.
 url: https://raw.githubusercontent.com/api-evangelist/abbisko/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,8 +28,15 @@ x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+x-no-api-surface: true
 tags:
 - Company
+- Biopharmaceutical
+- Oncology
+- Drug Discovery
+- Small Molecule
+- Healthcare
+- Life Sciences
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/abbisko-domain-security.yml
 - type: Website
   url: https://abbisko.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
